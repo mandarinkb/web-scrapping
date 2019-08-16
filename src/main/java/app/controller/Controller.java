@@ -43,7 +43,7 @@ public class Controller {
     @Scheduled(cron = "#{@cronExpression_1}") 
     public void runTask_1() {
         System.out.println(dateTimes.interDateTime() + " : web scrapping runTask_1 start");
-        System.out.println("search date => " + dateTimes.newInterDate());
+        /*  System.out.println("search date => " + dateTimes.newInterDate());
         String dataFixturesTh = elasticsearch.searchFixtures(dateTimes.newInterDate(), "fixtures_thaipremierleague");  //query โดยระบุวันที่วันนี้ ลงในตารางผลบอลไทยพรีเมียลีก 
         String dataFixturesPre = elasticsearch.searchFixtures(dateTimes.newInterDate(), "fixtures_premierleague");     //query โดยระบุวันที่วันนี้ ลงในตารางผลบอลพรีเมียลีก
 
@@ -61,9 +61,9 @@ public class Controller {
         }else{
             System.out.println("   didn't find fixtures_premierleague");
         }
-           
-        if (valueFixturesTh || valueFixturesPre) {  // กรณีมีการแข่งขันไทยพรีเมียลีก หรือ พรีเมีย ให้ทำงาน
-            serviceWebStart.startPresentResults();
+     */      
+        //if (valueFixturesTh || valueFixturesPre) {  // กรณีมีการแข่งขันไทยพรีเมียลีก หรือ พรีเมีย ให้ทำงาน
+ /*           serviceWebStart.startPresentResults();
             Jedis redis = rd.connect();
             String url;
             JSONObject json;
@@ -87,8 +87,8 @@ public class Controller {
                     check = false;
                     //System.out.println(dateTimes.interDateTime() + " : web scrapping runTask_1 stop");
                 }
-            }       
-        } 
+            } */      
+        //} 
         System.out.println(dateTimes.interDateTime() + " : web scrapping runTask_1 stop");
     }
 
@@ -96,7 +96,7 @@ public class Controller {
     @Scheduled(cron = "#{@cronExpression_2}") 
     public void runTask_2() {
         System.out.println(dateTimes.interDateTime() + " : web scrapping runTask_2 start");
-        clearIndex.allIndex();  // ลบ index ทั้งหมดยกเว้น ผลบอล
+        //clearIndex.allIndex();  // ลบ index ทั้งหมดยกเว้น ผลบอล
 
         serviceWebStart.start();
         Jedis redis = rd.connect();
