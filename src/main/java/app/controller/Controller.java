@@ -168,6 +168,13 @@ public class Controller {
                     servicePreAndThai.getPages(url);
                 }
  
+                if ("score_analyze_thaipremierleague".equals(type)) {           //วิเคราะห์บอลไทยลีก
+                    servicePreAndThai.getPages(url);
+                }
+                if ("score_analyze_premierleague".equals(type)) {               //วิเคราะห์บอลพรีเมียร์ลีก อังกฤษ
+                    servicePreAndThai.getPages(url);
+                } 
+                
             } else {
                 check = false;
             }
