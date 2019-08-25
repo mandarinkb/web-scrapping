@@ -4,6 +4,7 @@ D:\My projet\new-project\WebScraping\src\main\java\app\service\ServiceWebStartIm
 D:\My projet\new-project\WebScraping\src\main\java\app\function\DateTimes.java
 D:\My projet\new-project\WebScraping\src\main\java\app\function\Elasticsearch.java
 D:\My projet\new-project\WebScraping\src\main\java\app\function\Query.java
+D:\My projet\new-project\WebScraping\src\main\java\app\controller\RestartController.java
 D:\My projet\new-project\WebScraping\src\main\java\app\dao\Database.java
 D:\My projet\new-project\WebScraping\src\main\java\app\function\ClearIndex.java
 D:\My projet\new-project\WebScraping\src\main\java\app\dao\Redis.java

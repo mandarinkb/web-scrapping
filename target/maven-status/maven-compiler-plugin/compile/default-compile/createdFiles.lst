@@ -4,6 +4,7 @@ app\App.class
 app\function\Query.class
 app\service\ServiceWebStartImp.class
 app\function\DateTimes.class
+app\controller\RestartController.class
 app\dao\Redis.class
 app\function\Elasticsearch.class
 app\service\ServicePremierLeagueAndThaiPremierLeagueImp.class
