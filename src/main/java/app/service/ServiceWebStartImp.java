@@ -31,8 +31,8 @@ public class ServiceWebStartImp implements ServiceWebStart {
     public void start() {
         JSONObject json = new JSONObject();
         Jedis redis = rd.connect();
-        String sql = "select * from web where web_status = 1";
-        //String sql = "select * from web where web_status = 1 AND (detail != 'present_results' OR detail IS NULL)";
+        //String sql = "select * from web where web_status = 1";
+        String sql = "select * from web where web_status = 1 AND (detail != 'present_results' OR detail IS NULL)";
         try {
             Connection conn = db.connectDatase();
             ResultSet result = db.getResultSet(conn, sql);
@@ -79,7 +79,7 @@ public class ServiceWebStartImp implements ServiceWebStart {
             e.getMessage();
         }
     }
-    
+/*    
     @Override
     public String getWeb() {
         String sql = "select * from web";
@@ -234,5 +234,5 @@ public class ServiceWebStartImp implements ServiceWebStart {
         db.closeConnect(conn);   
         return apiResponse.status(200, "อัพเดทข้อมูลเรียบร้อยแล้ว");
     }
-
+*/
 }

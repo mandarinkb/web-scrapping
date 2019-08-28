@@ -135,7 +135,6 @@ public class OtherFunc {
             JSONObject jsonHits = json.getJSONObject("hits");
             JSONObject jsonTotal = jsonHits.getJSONObject("total");
             int value = jsonTotal.getInt("value");
-            //System.out.println("value : "+value);
             if (value == 0) {  //กรณีที่ไม่มีข้อมูลใน json
                 data = false;
             } else {           //กรณีที่มีข้อมูลใน json
