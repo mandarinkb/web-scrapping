@@ -73,12 +73,12 @@ public class Controller {
                 if (url != null) {
                     json = new JSONObject(url);
                     type = json.getString("type");
-                    if ("results_thaipremierleague".equals(type)) {             //ผลการแข่งขันไทยลีก (ปัจจุบัน)
+                    if ("results_thaipremierleague".equals(type) && valueFixturesTh) {             //ผลการแข่งขันไทยลีก (ปัจจุบัน)
                         String season = json.getString("season");
                         clearIndex.deleteResultsBySeason(season, "results_thaipremierleague");
                         servicePreAndThai.getPages(url);
                     }
-                    if ("results_premierleague".equals(type)) {                 //ผลการแข่งขันพรีเมียร์ลีก อังกฤษ (ปัจจุบัน)
+                    if ("results_premierleague".equals(type) && valueFixturesPre) {                 //ผลการแข่งขันพรีเมียร์ลีก อังกฤษ (ปัจจุบัน)
                         String season = json.getString("season");
                         clearIndex.deleteResultsBySeason(season, "results_premierleague");
                         servicePreAndThai.getPages(url);
