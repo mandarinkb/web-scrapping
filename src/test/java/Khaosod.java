@@ -209,7 +209,7 @@ public class Khaosod {
         String url = "https://www.khaosod.co.th/stock-monitor";
         Khaosod a = new Khaosod();
         a.firstPage(url);
-        a.nextPage();
+        //a.nextPage();
 
     } 
 }

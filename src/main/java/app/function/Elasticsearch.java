@@ -77,5 +77,6 @@ public class Elasticsearch {
         } catch (UnirestException ex) {
             Logger.getLogger(Elasticsearch.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }    
+    }  
+    
 }
