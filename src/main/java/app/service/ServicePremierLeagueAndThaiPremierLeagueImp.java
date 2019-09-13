@@ -28,7 +28,7 @@ public class ServicePremierLeagueAndThaiPremierLeagueImp implements ServicePremi
         Jedis redis = rd.connect();
         redis.rpush("pages", url);
     }
-    
+/*    
     @Override
     public void getStatsOfTeamPages(String url, String type) {
         JSONObject json = new JSONObject();
@@ -216,6 +216,6 @@ public class ServicePremierLeagueAndThaiPremierLeagueImp implements ServicePremi
         }
     }
 
-    
+*/    
 
 }
